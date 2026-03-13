@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Student Registration Form">
+    <meta name="keywords" content="Student, Registration, Form, HTML">
+    <meta name="author" content="Student">
+    <link rel="stylesheet" href="">
+
+    <title>Student Registration Form</title>
+
+</head>
+
+<body>
+
+    <center>
+        <h1>Student Registration Form</h1>
+    </center>
+
+    <form>
+
+        <table align="center" cellpadding="10">
+
+            <tr>
+                <td>Student Name</td>
+                <td colspan="3">
+                    <input type="text" name="studentname" size="60">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Mobile No.</td>
+                <td>
+                    <input type="tel" name="mobile">
+                </td>
+
+                <td>Email Id</td>
+                <td>
+                    <input type="email" name="email">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Father Name</td>
+                <td>
+                    <input type="text" name="fathername">
+                </td>
+
+                <td>Mother Name</td>
+                <td>
+                    <input type="text" name="mothername">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Select Course</td>
+                <td>
+                    <select name="course">
+                        <option>Select...</option>
+                        <option>B.Tech</option>
+                        <option>BCA</option>
+                        <option>BBA</option>
+                        <option>B.Sc</option>
+                    </select>
+                </td>
+
+                <td>Date Of Birth</td>
+                <td>
+                    <input type="date" name="dob">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Gender</td>
+                <td colspan="3">
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                </td>
+            </tr>
+
+            <tr>
+                <td>Student Photo</td>
+                <td colspan="3">
+                    <input type="file" name="photo">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Select Branch</td>
+                <td colspan="3">
+                    <input type="checkbox" name="branch" value="cse"> CSE
+                    <input type="checkbox" name="branch" value="it"> IT
+                    <input type="checkbox" name="branch" value="ece"> ECE
+                    <input type="checkbox" name="branch" value="civil"> Civil
+                </td>
+            </tr>
+
+            <tr>
+                <td>Address</td>
+                <td colspan="3">
+                    <textarea name="address" rows="4" cols="50"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="4" align="center">
+                    <input type="submit" value="Submit">
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+</body>
+
+</html>
