@@ -28,6 +28,21 @@ body {
     color: red;
     text-align: center;
 }
+.a1 {
+    color: green;
+}
+/* we can use any of it .a1 or .b1 or .a1.b1 */
+/* .b1 {
+    font-size: 20px;
+}
+.a1.b1 {
+    color: purple;
+    font-size: 25px;
+} 
+*/
 
-
-    
+/* Decendent selector --> if we have to target inside the parent element */
+.c1 .c2 {
+    color: darkblue;
+    font-size: 10px;
+}
