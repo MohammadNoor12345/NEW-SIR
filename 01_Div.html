@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Div Example</title>
+
     <style>
         #div1 {
             background-color: lightblue;
@@ -21,28 +23,53 @@
             background-color: lightcoral;
             padding: 20px;
         }
+
+        /* Descendant selector */
+        .a1 .b1 {
+            color: blue;
+        }
     </style>
+
 </head>
+
 <body>
+
     <div id="div1">
         <h1>Introduction to Div</h1>
-        <p>Div is a block-level element that is used to group other HTML elements together and apply styles to them.</p>
+        <p>
+            Div is a block-level element that is used to group other HTML elements
+            together and apply styles to them.
+        </p>
         <input type="text">
-
     </div>
+
 
     <div id="div2">
         <h1>Introduction to Div</h1>
-        <p>Div is a block-level element that is used to group other HTML elements together and apply styles to them.</p>
+        <p>
+            Div is a block-level element that is used to group other HTML elements
+            together and apply styles to them.
+        </p>
         <input type="text">
-
     </div>
+
 
     <div id="div3">
         <h1>Introduction to Div</h1>
-        <p>Div is a block-level element that is used to group other HTML elements together and apply styles to them.</p>
+        <p>
+            Div is a block-level element that is used to <span style="font-weight: bold;">Hello</span> group other HTML elements
+            together and apply styles to them.
+        </p>
         <input type="text">
-
     </div>
+
+
+    
+    <div class="a1">
+        <h2 >Web Development</h2>
+        <h2 class="b1">Backend Development</h2>
+    </div>
+
 </body>
+
 </html>
