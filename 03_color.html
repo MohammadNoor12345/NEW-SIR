@@ -54,10 +54,13 @@
             background-color: lightpink;
         }
         #div2 {
-            height: 150px;
-            width: 200px;
+            height: 1500px;
+            width: 2000px;
             background-color: black;
             background-image: url(Dog.png); /* for css we use url(../) to specify the path */
+            /* background-repeat: no-repeat;*/ /* This prevents the image from repeating */
+            background-repeat: repeat-x; /* This repeats the image horizontally */
+            
         }
     </style>
 </head>
@@ -71,7 +74,7 @@
         <h6>Heading 6</h6>
     </div>
     <div id="div2">
-
+        <h1>Dog Image</h1>
     </div>
 </body>
 </html>
