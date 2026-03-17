@@ -1,28 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Margins</title>
+    <title>Box Model Inspect Demo</title>
+
     <style>
-        div {
-            width: 500px;
-            height: 500px;
-            background-color: lightblue;
-            border: 3px solid black;
-
-            /* top right bottom left */
-            /* margin: 10px 20px 30px 40px;  */
-
-            /* top and bottom 10px, left and right 20px */
-            /* margin: 10px 20px; */
-
-            /* all sides 10px */
-            margin: 10px; 
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
+
+        body {
+            background-color: #f0f0f0;
+            padding: 40px;
+        }
+
+        /* Main box */
+        .box {
+            width: 300px;
+            height: 300px;
+
+            /* Content color */
+            background-color: lightblue;
+
+            /* Padding (inside space) */
+            padding: 40px;
+
+            /* Border */
+            border: 10px solid black;
+
+            /* Margin (outside space) */
+            margin: 50px;
+
+            /* Text just to see content area */
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* Inner content to visualize */
+        .inner {
+            background-color: yellow;
+            height: 100%;
+        }
+    
+        /* content box : 300px + 40px + 40px + 10px + 10px (content width; padding left and right; border left and right) */
+
     </style>
 </head>
+
 <body>
-    <div></div>
+
+    <div class="box">
+        <div class="inner">CONTENT</div>
+    </div>
+
 </body>
+
 </html>
