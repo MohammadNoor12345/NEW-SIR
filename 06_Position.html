@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Made Easy</title>
+
+    <style>
+        body {
+            height: 2000px;
+            font-family: Arial;
+        }
+
+        /* COMMON STYLE */
+        .box {
+            width: 200px;
+            padding: 10px;
+            margin: 20px;
+            color: white;
+        }
+
+        /* 1. STATIC */
+        .static {
+            background: gray;
+            position: static;
+        }
+
+        /* 2. RELATIVE */
+        .relative {
+            background: blue;
+            position: relative;
+            top: 20px;
+            /* moves down */
+            left: 20px;
+            /* moves right */
+        }
+
+        /* 3. ABSOLUTE */
+        .parent {
+            position: relative;
+            background: lightgray;
+            width: 300px;
+            height: 200px;
+            margin: 20px;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 0;
+            /* top of parent */
+            right: 0;
+            /* right of parent */
+            background: red;
+            padding: 10px;
+            color: white;
+        }
+
+        /* 4. FIXED */
+        .fixed {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background: black;
+        }
+
+        /* 5. STICKY */
+        .sticky {
+            position: sticky;
+            top: 0;
+            background: orange;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- STICKY -->
+    <div class="sticky">Sticky Header (Scroll me)</div>
+
+    <!-- STATIC -->
+    <div class="box static">
+        Static (default - no movement)
+    </div>
+
+    <!-- RELATIVE -->
+    <div class="box relative">
+        Relative (moves but keeps space)
+    </div>
+
+    <!-- ABSOLUTE -->
+    <div class="parent">
+        Parent Box
+        <div class="absolute">Absolute (inside parent)</div>
+    </div>
+
+    <!-- FIXED -->
+    <div class="box fixed">
+        Fixed (always on screen)
+    </div>
+
+</body>
+
+</html>
